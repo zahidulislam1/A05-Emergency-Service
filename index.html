@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Service</title>
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hind-font {
+        font-family: "Hind Madurai", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center px-[50px] py-5 bg-white shadow-[0px 1px 50px 0px rgba(181, 181, 181, 0.25)]"
+    >
+      <div class="flex gap-1">
+        <img src="./assets/logo.png" class="w-12" alt="" />
+        <p class="text-[#006747] font-extrabold">Emergency <br />Service</p>
+      </div>
+      <div class="flex gap-5">
+        <div class="flex gap-2 bg-[#41ff6b1a] p-5 rounded-[40px]">
+          <p class="font-semibold">0</p>
+          <img src="./assets/heart.png" class="w-6" alt="" />
+        </div>
+        <div class="flex gap-2 bg-[#41ff6b1a] p-5 rounded-[40px]">
+          <p class="font-semibold">100</p>
+          <img src="./assets/coin.png" class="w-6" alt="" />
+        </div>
+        <div class="flex gap-2 bg-[#00A63E] text-white p-5 rounded-[40px]">
+          <p class="font-semibold">0</p>
+          <p class="font-semibold">Copy</p>
+        </div>
+      </div>
+    </nav>
+    <section
+      class="flex justify-center items-center flex-col bg-[#013223] text-white"
+    >
+      <img src="./assets/logo-dark.png" class="w-20 mt-5 mb-3" alt="" />
+      <h1 class="font-bold text-[40px] hind-font mb-3">
+        Emergency Service Directory
+      </h1>
+      <p class="font-semibold text-[20px] hind-font mb-4">
+        Government Emergency Services at Your Fingertip – A Project by
+        Government of the People’s Republic of Bangladesh
+      </p>
+    </section>
+    <section class="bg-[#41ff6b1a]">
+      <div class="w-12/13 mx-auto grid grid-cols-12">
+        <div class="col-span-9 grid grid-cols-3 gap-2 my-12">
+          <div class="bg-white p-7 rounded-xl">
+            <div class="flex justify-between">
+              <img src="./assets/emergency.png" class="w-5" alt="" />
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <h2>National Emergency Number</h2>
+            <p>National Emergency</p>
+            <p>999</p>
+            <p>All</p>
+            <div class="">
+              <button>
+                <i class="fa-regular fa-copy"></i>
+                <span>Copy</span>
+              </button>
+              <button>
+                <i class="fa-solid fa-phone"></i>
+                <span>Call</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <aside class="col-span-3 flex justify-between my-12">
+          <div class="flex justify-start items-start">
+            <i class="fa-solid fa-clock"></i>
+            <p>Call History</p>
+          </div>
+          <div class="">
+            <button class="bg-[#00A63E] text-white rounded-xl p-2">
+              Clear
+            </button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </body>
+</html>
