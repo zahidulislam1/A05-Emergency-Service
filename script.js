@@ -19,3 +19,13 @@ for (let copybtn of copybtns) {
     document.getElementById("copy-count").innerText = currentCount;
   });
 }
+const callbtns = document.getElementsByClassName("btn-call");
+
+for (let callbtn of callbtns) {
+  callbtn.addEventListener("click", function () {
+    const title = callbtn.parentNode.parentNode.children[2].innerText;
+    const number = callbtn.parentNode.parentNode.children[3].innerText;
+
+    alert(`📞calling ${title}${number}`);
+  });
+}
