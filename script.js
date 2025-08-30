@@ -32,22 +32,6 @@ for (let copybtn of copybtns) {
   });
 }
 
-// for (let copybtn of copybtns) {
-//   copybtn.addEventListener("click", () => {
-//     const number =
-//     // Step 3: Copy the text to the clipboard
-//     navigator.clipboard
-//       .writeText(number.textContent)
-//       .then(() => {
-//         // Step 4: Optional: show a confirmation message
-//         alert("Text copied to clipboard!");
-//       })
-//       .catch((err) => {
-//         console.error("Failed to copy text: ", err);
-//       });
-//   });
-// }
-
 const callbtns = document.getElementsByClassName("btn-call");
 
 for (let callbtn of callbtns) {
@@ -82,5 +66,5 @@ for (let callbtn of callbtns) {
 
 document.getElementById("clear").addEventListener("click", function () {
   const cartHistory = document.getElementById("cart-history");
-  cartHistory = "";
+  cartHistory.innerHTML = "";
 });
